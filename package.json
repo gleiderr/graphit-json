@@ -1,0 +1,17 @@
+{
+  "name": "graphit-json",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/graphit-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graphit"
+  ],
+  "author": "gleiderr",
+  "license": "ISC",
+  "dependencies": {
+    "graphit": "file:../graphit"
+  }
+}

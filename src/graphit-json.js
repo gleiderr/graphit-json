@@ -4,7 +4,10 @@ class Graphit_JSON {
     this.list = {};
     this.lastId = 0;
   }
-  new_id() { return this.lastId++; }
+  new_id() {
+    while(this.db[this.lastId = Date.now()] !== undefined);
+    return this.lastId; 
+  }
 
   retrieve_val(id) { 
     return Promise.resolve(this.db[id]); 
